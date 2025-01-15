@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davben Enterprise Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Body and Section Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Section */
+    section[style*="background-color: #333;"] {
+      background: linear-gradient(to right, #1a1a1a, #333);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      font-weight: bolder;
+      text-transform: uppercase;
+      padding: 30px;
+    }
+
+    /* Portfolio and Project Section */
+    .container {
+      margin-top: 30px;
+    }
+
+    .portfolio-item {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .portfolio-item h2, .portfolio-item h3 {
+      color: #2c3e50;
+    }
+
+    .portfolio-item p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 10px 0;
+      color: #7f8c8d;
+    }
+
+    /* Responsive Video Wrapper */
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding-top: 56.25%;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+
+    /* Key Features and Technical Details */
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1rem;
+      color: #7f8c8d;
+    }
+
+    ul li {
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      color: #16a085;
+      font-size: 1.5rem;
+      top: 0;
+    }
+
+    /* Button Styling */
+    .btn-primary {
+      background-color: #16a085;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Section Title Styling */
+    h2 {
+      color: #2c3e50;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    footer .social-icons a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    footer .social-icons a:hover {
+      color: #16a085;
+    }
+
+    footer p {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .portfolio-item {
+        padding: 15px;
+      }
+
+      .portfolio-item h2, .portfolio-item h3 {
+        font-size: 1.3rem;
+      }
+
+      .video-wrapper iframe {
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <p>These are projects I have built so far</p>
+  </section>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="portfolio-item">
+          <h2>Davben Enterprise Website</h2>
+          <a href="https://richardtsibu76.github.io/davben-enterprise/" target="_blank" class="btn btn-primary">View Project</a>
+          <p>Davben Enterprise is a responsive and visually appealing website I developed for a small business. The website showcases the company's products and services, and provides an easy-to-navigate user experience.</p>
+          <a href="index.html" class="btn btn-primary">Go Back</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="portfolio-item">
+          <h3>Key Features</h3>
+          <ul>
+            <li>Modern and clean design with a focus on user-friendliness</li>
+            <li>Responsive layout that adapts to various devices and screen sizes</li>
+            <li>Intuitive navigation menu and clear calls-to-action</li>
+            <li>Integration of an e-commerce platform for product sales</li>
+            <li>Seamless integration of a blog section for sharing company updates</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="portfolio-item">
+          <h3>Technical Details</h3>
+          <p>The website was built using HTML, CSS, JavaScript, and third-party tools like Trello and GitHub. It utilizes the Bootstrap framework for responsive design and UI components. The e-commerce functionality is powered by a third-party platform, and the blog section is integrated with a content management system.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="portfolio-item">
+          <h3>Design Process</h3>
+          <p>I started the design process by conducting market research and competitor analysis to understand the industry standards and user expectations. I then created wireframes and low-fidelity prototypes to explore different layout and navigation options. After several iterations and feedback sessions, I developed the final design, ensuring a consistent brand identity and intuitive user experience.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="portfolio-item">
+          <h3>Challenges and Solutions</h3>
+          <p>One of the main challenges was integrating the e-commerce platform seamlessly with the overall website design. I overcame this by carefully researching and testing various integration methods, ultimately finding a solution that provided a seamless user experience without compromising the website's visual aesthetic.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="portfolio-item">
+          <h3>Performance and Impact</h3>
+          <p>Since the website's launch, we've seen a significant increase in user engagement and product sales. The website's responsive design and optimized performance have also contributed to improved search engine rankings and visibility.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Davben Enterprise. All Rights Reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/richard-tsibu-darkoh-787481275/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://twitter.com/TsibuDarkoh" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/richardtsibu76" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
