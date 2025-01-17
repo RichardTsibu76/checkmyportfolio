@@ -1,5 +1,10 @@
 
+body, html{
 
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
 
 
 /* end of updated styling*/
@@ -316,7 +321,7 @@ a{
 
 .tech-item p {
   font-size: 1.1rem;
-  color: #333;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -594,7 +599,7 @@ CV UPLOADING STYLING
 .footer-section h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #ff2600;
+  color: white;
 }
 
 .footer-section p {
@@ -603,7 +608,7 @@ CV UPLOADING STYLING
 }
 
 .footer-section a {
-  color: #ff2600;
+  color: white;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -616,6 +621,8 @@ CV UPLOADING STYLING
 .social-icons a {
   margin: 10px;
   transition: transform 0.3s ease;
+  background-color: #eef6fc;
+  border-radius: 5px;
 }
 
 .social-icons a:hover {
@@ -623,7 +630,7 @@ CV UPLOADING STYLING
 }
 
 .footer-bottom {
-  border-top: 1px solid #333;
+  border-top: 1px solid white;
   padding: 10px;
   font-size: 0.9rem;
   color: #ccc;
